@@ -1,0 +1,70 @@
+.icon {
+  width: 30px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.icon-min {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+  opacity: 0.5;
+}
+
+.icon-micro {
+  width: 15px;
+  height: 15px;
+}
+
+.formicon{
+  width: 20px;
+  height: 20px;
+  background: 100% 100% no-repeat;
+  background-size: contain;
+  z-index: 101;
+  opacity: 0.5;
+}
+
+.formicon.shifted{
+  position: absolute;
+  left: 13px;
+  top: 13px;
+}
+
+div.icon_password {
+  background-image: url('../img/Lock-50.png'); 
+}
+div.icon_email {
+  background-image: url('../img/New%20Post-50.png'); 
+}
+div.icon_login {
+  background-image: url('../img/Circled%20User%20Male-50.png'); 
+}
+
+div.icon_delete{
+   position: relative; 
+   background-image: url('../img/Delete-48.png'); 
+}
+
+.back{
+  display: inline-block; 
+  position: absolute; 
+  right: 10px; 
+  top: 10px;
+}
+.up_down{
+  /*class for javascript*/
+  
+}
+.icon_down{
+  background-image: url(../img/Sort%20Down-48.png);
+}
+.icon_up{
+  background-image: url(../img/Sort%20Up-48.png);
+}
+
+
+
+
+ 

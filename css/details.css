@@ -1,0 +1,78 @@
+.SearchInputToken {
+    float: left;
+    height: 32px;
+}
+
+.tokenWrapper{
+    margin: 0px;
+    margin-left: -10px;
+    text-align: left; 
+    vertical-align: middle;
+    color: green;
+    display: inline-block;
+    height: auto;
+    margin: 3px;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 0px;
+}
+.colView{
+   margin: 0px; 
+   list-style: outside none none;
+   padding: 5px;
+}
+.colView>.tokenWrapper{
+    display: block; 
+    margin: 0px;   
+}
+
+.tokenContainer {
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    font-size: 13px;
+    font-weight: 600;
+    height: 26px;
+    padding: 0px 4px; 
+    letter-spacing: -0.01em;
+    margin: 3px 3px 3px 0;
+    background: #264A1B;
+    box-sizing: content-box;
+/*   background: blue;*/
+}
+
+.tokenContainer:hover {
+  background: #69A456;
+ }
+
+ .tokenContainer span {
+    border-radius: 6px 0 0 6px;
+    box-sizing: border-box;
+    float: left;
+    height: 26px;
+    padding: 4px 8px 6px;
+   
+}
+
+span.remove {
+    border-left: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 0 6px 6px 0;
+    padding: 7px 3px 3px 6px;
+    display: none;
+}
+
+span.remove em {
+    background: url("../img/Delete-52-white.png");
+    background-size: contain;
+ 
+    display: block;
+    height: 12px;
+    width: 12px;
+}
+ span.remove em:hover {
+    transform: scale(1.3);
+}
+ .tokenContainer.active {
+	background: blue;
+}

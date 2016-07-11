@@ -1,0 +1,65 @@
+
+.subheader-wrapper {
+  margin: 10px;
+  width: 100%;
+  height: 100px; 
+  
+}
+.post_title > h1 {
+	margin: 0px; 
+}
+.post_subheader{
+  text-align: left;
+  position: relative;
+}
+.top{
+  position: relative; 
+  height: 60%;
+  margin-bottom: 10px; 
+}
+.bottom {
+  position: relative; 
+  height: 40%;
+}
+
+.left,
+.right{
+  position: relative; 
+  display: inline-block; 
+  vertical-align: top;
+  padding: 5px; 
+ 
+}
+
+.leftContainer {
+	width: 60%;
+    margin-right: 5px; 
+}
+.rightContainer {
+	width: 35%;
+    height: 100%;
+    text-align: right; 
+}
+.avatar{
+  border-radius: 50%; 
+}
+
+.question_body {
+  position: relative; 
+  margin:0px 0px 20px 50px; 
+  text-align: top; 
+}
+.post_attrs {
+   margin-top: -20px; 
+   display: inline-block;
+   float: right;
+   text-align: right; 
+}
+
+.floatLeft {
+  float: left; 
+}
+.floatLeft>.info {
+	display: block;
+    margin-top: 5px; 
+}
