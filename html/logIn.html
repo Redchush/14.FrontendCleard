@@ -6,22 +6,19 @@
     Ответы на любые вопросы LIKE_IT
   </title>
   <meta charset="utf-8">
-  <link href="../css/form.css" rel="stylesheet">
-  <link href="../css/icon.css" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
   <script type="../text/javascript" src="js/libs/jquery-3.0.0.min.js"></script>
   <script type="../text/javascript" src="js/form.js"></script>
 </head>
 
 <body>
-  <div class="outer absoluteCenter show">
+  <div class="outer absoluteCenter">
     <div class="showMask"></div>
-
     <div class="inner">
       <div class="back">
         <a href="../home.html">
-<!--          <img class="icon icon-min" src="img/Delete-48.png">-->
           <div class="formicon icon_delete"></div>
-      </a>
+        </a>
       </div>
       <form novalidate="" data-remote="true" method="post" id="login_form" class="s-form login_form validateble">
         <div class="title inline">Вход</div>
@@ -47,16 +44,18 @@
         </div>
 
       </form>
+      
+      <div class="linksContainer">
+        <div class="links">
+          <a class="remind" href="restore.html">Восстановить пароль </a>
+        </div>
 
-      <div class="links">
-        <a class="remind" href="restore.html">Восстановить пароль
-			</a>
+          <div class="links">
+          <a class="remind" href="signIn.html">Зарегистрироваться
+              </a>
+          </div>        
       </div>
       
-        <div class="links">
-        <a class="remind" href="signIn.html">Зарегистрироваться
-			</a>
-      </div>
     </div>
   </div>
 </body>

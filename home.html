@@ -8,116 +8,233 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/main.css" rel="stylesheet">
-  <link href="css/details.css" rel="stylesheet">
-  <link href="css/icon.css" rel="stylesheet">
   <script type="text/javascript" src="js/libs/jquery-3.0.0.min.js"></script>
+  <style>
 
+  </style>
 
 </head>
 
 <body>
   <header class="header">
     <div class="headerContainer">
-      <div class="leftHeaderContent">
-        <ul class="seachList">
-          <li class="logo">
-            <span> LikeIT </span>
-          </li>
-          <li class="leftRounded">
-            <a href="home.html">
-              <img class="icon" alt="home" src="img/Home-48.png">
-            </a>
-          </li>
-          <li>
-            <div class="searchForm">
-              <form name="search" method="GET" action="/search/">
-                <input class="field" placeholder="Поиск" autocomplete="off">
-                <img class="icon-min" alt="search" src="img/Search-48.png">
-              </form>
-            </div>
-          </li>
-          <li class="rightRounded">
-            <a href="#">
-              <img class="icon" alt="home" src="img/Menu-48.png">
-            </a>
-          </li>
-        </ul>
+      <div class="col1">
+        <div class="logo">
+          <span> LikeIT </span>
+        </div>
       </div>
-
-      <div class="rightHeaderContent">
+      <div class="col3">
         <ul class="rightHeader">
-          <li class="content leftRounded">
-            <div data-element-type="40" class="UserNavigateButton named" id="logIn">
+          <li class="bigScreen content">
+            <div class="btn btn-log leftRounded" id="logIn">
               <a href="html/logIn.html">Войти</a>
             </div>
           </li>
-          <li class="content rightRounded">
-            <div data-element-type="40" class="UserNavigateButton named" id="signIn">
-              <a href="html/signIn.html">Регистрация</a>
+
+          <li class="bigScreen content rightRounded dropdown ">
+            <div class="btn btn-log rightRounded" id="signIn">
+              <a href="html/signIn.html"><span>Регистрация</span></a>
             </div>
           </li>
+          <li class="smallScreen content leftRounded dropdown">
+            <bottom class="icon btn leftRounded">
+              <img class="icon" src="img/Search-48.png">
+            </bottom>
+            <div class="dropdown-content wide">
+              <div class="searchForm">
+                <form name="search" method="GET" action="/search/">
+                  <input class="field" placeholder="Поиск" autocomplete="off">
+                  <img class="seachicon" alt="search" src="img/Search-48.png">
+                </form>
+              </div>
+            </div>
+          </li>
+
+          <li class="smallScreen content rightRounded dropdown">
+            <bottom class="icon btn drop rightRounded">
+              <img class="icon" src="img/Menu-48.png">
+            </bottom>
+            <div class="dropdown-content">
+              <ul class="rightHeader">
+                <li class="content leftRounded">
+                  <div class="btn btn-log leftRounded" id="logIn">
+                    <a href="html/logIn.html">Войти</a>
+                  </div>
+                </li>
+
+                <li class="content rightRounded">
+                  <div class="btn btn-log rightRounded" id="signIn">
+                    <a href="html/signIn.html"><span>Регистрация</span></a>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+          </li>
+
+          <li class="mediumScreen bothRounded dropdown">
+            <bottom class="icon btn drop bothRounded">
+              <img class="icon" src="img/Menu-48.png">
+            </bottom>
+            <div class="dropdown-content">
+              <ul class="rightHeader">
+                <li class="content leftRounded">
+                  <div class="btn btn-log leftRounded" id="logIn">
+                    <a href="html/logIn.html">Войти</a>
+                  </div>
+                </li>
+
+                <li class="content rightRounded">
+                  <div class="btn btn-log rightRounded" id="signIn">
+                    <a href="html/signIn.html"><span>Регистрация</span></a>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </li>
+          <li class="clearfix"></li>
         </ul>
       </div>
+      <div class="col2">
+        <div class="searchForm">
+          <form name="search" method="GET" action="/search/">
+            <input class="field" placeholder="Поиск" autocomplete="off">
+            <img class="seachicon" alt="search" src="img/Search-48.png">
+          </form>
+        </div>
+      </div>
+      <div class="clearfix"></div>
     </div>
-
-
   </header>
+
+
+
   <section class="content-wrapper">
     <div class="center">
       <div class="title">
         <h1> Все вопросы 
-   </h1>
+       </h1>
       </div>
       <div class="subheader">
         <div id="tabs" class="tabs">
-          <a class="content short" data-sort="down">
-                создание
-                <div class="icon formicon up_down icon_down"></div>
+          <a class="sort-btn" data-sort="down">
+               <span>создание</span> 
+                <div class="icon formicon icon_down"></div>
                 </a>
-          <a class="content short iconed" data-sort="down">
-                обновление
-                  <div class="icon formicon up_down icon_down"></div>
+          <a class="sort-btn" data-sort="down">
+             <span>обновление</span>   
+                  <div class="icon formicon icon_down"></div>
                 </a>
-          <a class="content short" data-sort="down">
-                ответы
-                <div class="icon formicon up_down icon_down" ></div>
-                </a>
-          <a class="content short" data-sort="down">просмотры
-                <div class="icon formicon up_down icon_down"></div>
+          <a class="sort-btn" data-sort="down">
+              <span>ответы</span>  
+                <div class="icon formicon icon_down" ></div>
+          </a>
+          <a class="sort-btn" data-sort="down">
+           <span>просмотры</span>
+            <div class="icon formicon icon_down"></div>
         </a>
         </div>
       </div>
       <div class="column_main column">
         <main class="main">
           <div class="page_body">
-
             <ul class="content_list">
               <li class="content-list_item">
                 <div class="question_box">
                   <div class="question_content">
                     <nav class="question_tags">
                       <ul>
-                        <li class="tokenWrapper">
-                          <div class="SearchInputToken">
+                        <li class="tokenWrapper">                       
                             <div class="tokenContainer">
                               <span>java</span>
                             </div>
-                          </div>
+                          
                         </li>
                         <li class="tokenWrapper">
-                          <div class="SearchInputToken">
+                          <div class="tokenContainer">
+                              <span data-element-type="227">java</span>
+                            </div>
+                         
+                        </li>
+                      </ul>
+                    </nav>
+                    <h2 class="question_title">
+										<a class="question_title-link" href="#">Java наше все</a> 
+									</h2>
+               
+                  </div>
+                  
+                  <div class="question_info">
+                    <div class="question_info_box">
+                      <div class="info">
+                        <span class="counter"> 3 </span>
+                      </div>
+                      <div class="answers info">ответов</div>
+                    </div>
+                  </div>
+                   <ul class="question_attrs">
+                      <li class="question_attrs_item">
+                        <img class="icon icon-micro" src="img/Star%20Filled-48.png">
+                        <span class="followers_count" title="Количество подписавшихся на вопрос">23</span>
+                      </li>
+                      <li class="question_attrs_item">
+                        <img class="icon icon-micro" src="img/Visible-48.png">
+                        <span class="views-count"> 1074 </span>
+                      </li>
+
+                      <li class="question_attrs_item">
+                        <img class="icon icon-micro" src="img/Available%20Updates-52.png">
+                        <time class="created_date" title="Дата публикации: 28 июня 2016, в 09:38" itemprop="dateCreated" datetime="2016-06-28 09:38:36"> 3 часа назад</time>
+                      </li>
+
+                    
+                      <li class="question_attrs_item">
+                        <img class="icon icon-micro" src="img/Date%20To-52.png">
+                        <time class="created_date" pubdate="" title="Дата публикации: 28 июня 2016, в 09:38" itemprop="dateCreated" datetime="2016-06-28 09:38:36">2016-06-28 09:38 </time>
+                      </li>
+
+                    </ul>
+                  <div class="clearfix"></div>
+                </div>
+              </li>
+               <li class="content-list_item">
+                <div class="question_box">
+                  <div class="question_content">
+                    <nav class="question_tags">
+                      <ul>
+                        <li class="tokenWrapper">
+                         
+                            <div class="tokenContainer">
+                              <span>java</span>
+                            </div>
+                          
+                        </li>
+                        <li class="tokenWrapper">
+                         
                             <div class="tokenContainer">
                               <span data-element-type="227">java</span>
                             </div>
-                          </div>
+                         
                         </li>
                       </ul>
                     </nav>
-
                     <h2 class="question_title">
 										<a class="question_title-link" href="#">Java наше все</a> 
 									</h2>
-                    <ul class="question_attrs inline_list">
+               
+                  </div>
+                  
+                  <div class="question_info">
+                    <div class="question_info_box">
+                      <div class="info">
+                        <span class="counter"> 3 </span>
+                      </div>
+                      <div class="answers info">ответов</div>
+                    </div>
+                  </div>
+                   <ul class="question_attrs">
                       <li class="question_attrs_item">
                         <img class="icon icon-micro" src="img/Star%20Filled-48.png">
                         <span class="followers_count" title="Количество подписавшихся на вопрос">23</span>
@@ -129,53 +246,54 @@
 
                       <li class="question_attrs_item">
                         <img class="icon icon-micro" src="img/Available%20Updates-52.png">
-                        <time class="created_date" pubdate="" title="Дата публикации: 28 июня 2016, в 09:38" itemprop="dateCreated" datetime="2016-06-28 09:38:36"> 3 часа назад</time>
+                        <time class="created_date" title="Дата публикации: 28 июня 2016, в 09:38" itemprop="dateCreated" datetime="2016-06-28 09:38:36"> 3 часа назад</time>
                       </li>
 
-                      <img class="icon icon-micro" src="img/Date%20To-52.png">
+                    
                       <li class="question_attrs_item">
+                        <img class="icon icon-micro" src="img/Date%20To-52.png">
                         <time class="created_date" pubdate="" title="Дата публикации: 28 июня 2016, в 09:38" itemprop="dateCreated" datetime="2016-06-28 09:38:36">2016-06-28 09:38 </time>
                       </li>
 
                     </ul>
-                  </div>
-                  <div class="question_info info">
-                    <div class="question_info_box">
-                      <div class="info">
-                        <span class="counter"> 3 </span>
-                      </div>
-                      <div class="answers info">ответов</div>
-                    </div>
-                  </div>
                   <div class="clearfix"></div>
                 </div>
               </li>
-              <li class="content-list_item">
+               <li class="content-list_item">
                 <div class="question_box">
                   <div class="question_content">
                     <nav class="question_tags">
                       <ul>
                         <li class="tokenWrapper">
-                          <div class="SearchInputToken">
+                     
                             <div class="tokenContainer">
                               <span>java</span>
                             </div>
-                          </div>
+                        
                         </li>
-                        <li class="tokenWrapper">
-                          <div class="SearchInputToken">
+                        <li class="tokenWrapper">                  
                             <div class="tokenContainer">
-                              <span>java</span>
+                              <span data-element-type="227">java</span>
                             </div>
-                          </div>
+                       
                         </li>
                       </ul>
                     </nav>
-
                     <h2 class="question_title">
 										<a class="question_title-link" href="#">Java наше все</a> 
 									</h2>
-                    <ul class="question_attrs inline_list">
+               
+                  </div>
+                  
+                  <div class="question_info">
+                    <div class="question_info_box">
+                      <div class="info">
+                        <span class="counter"> 3 </span>
+                      </div>
+                      <div class="answers info">ответов</div>
+                    </div>
+                  </div>
+                  <ul class="question_attrs">
                       <li class="question_attrs_item">
                         <img class="icon icon-micro" src="img/Star%20Filled-48.png">
                         <span class="followers_count" title="Количество подписавшихся на вопрос">23</span>
@@ -187,85 +305,21 @@
 
                       <li class="question_attrs_item">
                         <img class="icon icon-micro" src="img/Available%20Updates-52.png">
-                        <time class="created_date" pubdate="" title="Дата публикации: 28 июня 2016, в 09:38" itemprop="dateCreated" datetime="2016-06-28 09:38:36"> 3 часа назад</time>
+                        <time class="created_date" title="Дата публикации: 28 июня 2016, в 09:38" itemprop="dateCreated" datetime="2016-06-28 09:38:36"> 3 часа назад</time>
                       </li>
 
-                      <img class="icon icon-micro" src="img/Date%20To-52.png">
+                    
                       <li class="question_attrs_item">
+                        <img class="icon icon-micro" src="img/Date%20To-52.png">
                         <time class="created_date" pubdate="" title="Дата публикации: 28 июня 2016, в 09:38" itemprop="dateCreated" datetime="2016-06-28 09:38:36">2016-06-28 09:38 </time>
                       </li>
 
                     </ul>
-                  </div>
-                  <div class="question_info info">
-                    <div class="question_info_box">
-                      <div class="info">
-                        <span class="counter"> 3 </span>
-                      </div>
-                      <div class="answers info">ответов</div>
-                    </div>
-                  </div>
                   <div class="clearfix"></div>
                 </div>
               </li>
-              <li class="content-list_item">
-                <div class="question_box">
-                  <div class="question_content">
-                    <nav class="question_tags">
-                      <ul>
-                        <li class="tokenWrapper">
-                          <div class="SearchInputToken">
-                            <div class="tokenContainer">
-                              <span data-tag="1">java</span>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="tokenWrapper">
-                          <div class="SearchInputToken">
-                            <div class="tokenContainer">
-                              <span data-tag="1">java</span>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </nav>
-
-                    <h2 class="question_title">
-										<a class="question_title-link" href="#">Java наше все</a> 
-									</h2>
-                    <ul class="question_attrs inline_list">
-                      <li class="question_attrs_item">
-                        <img class="icon icon-micro" src="img/Star%20Filled-48.png">
-                        <span class="followers_count" title="Количество подписавшихся на вопрос">23</span>
-                      </li>
-                      <li class="question_attrs_item">
-                        <img class="icon icon-micro" src="img/Visible-48.png">
-                        <span class="views-count"> 1074 </span>
-                      </li>
-
-                      <li class="question_attrs_item">
-                        <img class="icon icon-micro" src="img/Available%20Updates-52.png">
-                        <time class="created_date" pubdate="" title="Дата публикации: 28 июня 2016, в 09:38" itemprop="dateCreated" datetime="2016-06-28 09:38:36"> 3 часа назад</time>
-                      </li>
-
-                      <img class="icon icon-micro" src="img/Date%20To-52.png">
-                      <li class="question_attrs_item">
-                        <time class="created_date" pubdate="" title="Дата публикации: 28 июня 2016, в 09:38" itemprop="dateCreated" datetime="2016-06-28 09:38:36">2016-06-28 09:38 </time>
-                      </li>
-
-                    </ul>
-                  </div>
-                  <div class="question_info info">
-                    <div class="question_info_box">
-                      <div class="info">
-                        <span class="counter"> 3 </span>
-                      </div>
-                      <div class="answers info">ответов</div>
-                    </div>
-                  </div>
-                  <div class="clearfix"></div>
-                </div>
-              </li>
+              
+             
             </ul>
 
             <ul class="pagination">
@@ -309,17 +363,17 @@
                   <div class="SearchInputToken">
                     <div class="tokenContainer">
                       <span data-tag="6">css</span>
-                       <span class="remove">
+                      <span class="remove">
 				         <em></em>
 					  </span>
                     </div>
                   </div>
                 </li>
-                 <li class="tokenWrapper">
+                <li class="tokenWrapper">
                   <div class="SearchInputToken">
                     <div class="tokenContainer">
                       <span data-tag="1">java</span>
-                       <span class="remove">
+                      <span class="remove">
 				         <em></em>
 					  </span>
                     </div>
